@@ -7,4 +7,8 @@ router.get('/login', profilesController.login);
 
 router.get('/register', profilesController.register);
 
+router.get('/profile/:usuario', profilesController.profile);
+
+router.get('/profileEdit', profilesController.edit);
+
 module.exports = router;
