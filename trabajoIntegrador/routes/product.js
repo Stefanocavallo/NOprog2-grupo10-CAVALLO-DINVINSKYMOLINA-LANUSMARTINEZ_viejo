@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
+let productosController = require('../controllers/productosController');
 
-let productsController = require('../controllers/productController');
+router.get('/product', productosController.index)
 
-router.get('/product/:idProduct', productsController.product);
+router.get('/product/:idProduct', productosController.product);
 
-router.get('/productAdd', productsController.add);
+router.get('/productAdd', productosController.add);
 
-router.get('/search', productsController.search);
+router.get('/search', productosController.search);
 
-module.exports = router;
+
+module.exports = router;  

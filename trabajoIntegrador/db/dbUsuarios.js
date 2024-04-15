@@ -48,4 +48,4 @@ const dataU = {
     ],
 };
 
-module.exports = dbUsuarios;
+module.exports = dataU;

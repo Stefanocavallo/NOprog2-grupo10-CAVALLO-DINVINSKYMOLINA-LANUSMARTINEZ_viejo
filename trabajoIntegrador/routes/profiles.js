@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-let profilesController = require('../controllers/profileController');
+let profileController = require('../controllers/profileController');
 
-router.get('/login', profilesController.login);
+router.get('/login', profileController.login);
 
-router.get('/register', profilesController.register);
+router.get('/register', profileController.register);
 
-router.get('/profile/:usuario', profilesController.profile);
+router.get('/profile/:usuario', profileController.profile);
 
-router.get('/profileEdit', profilesController.edit);
+router.get('/profileEdit', profileController.edit);
 
 module.exports = router;
