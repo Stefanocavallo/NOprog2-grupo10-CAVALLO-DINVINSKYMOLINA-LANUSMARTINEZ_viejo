@@ -1,4 +1,4 @@
-//const dbproductos = require('../db/dbProductos')
+const dbProductos = require('../db/dbProductos')
 const express = require("express")
 
 const productosController = {
@@ -6,11 +6,11 @@ const productosController = {
         return res.render('index', {lista:'aca va la db productos'})
     },
     product: function(req, res){
-        let id = req.params.idProducto;
+        let id = req.params.idProduct;
         let respuesta;
-        for (let i = 0; i < dbProductos.lista.length; i++) {
-            if (id.toLowercase() === dbProductos.lista[i].nombre.toLowercase()) {
-                respuesta = dbProductos.lista[i]
+        for (let i = 0; i < dbProductos.productos.length; i++) {
+            if (id.toLowerCase() === dbProductos.productos[i].nombreProducto.toLowerCase()) {
+                respuesta = dbProductos.productos[i]
             }
         }
         if (respuesta.length === 0) {

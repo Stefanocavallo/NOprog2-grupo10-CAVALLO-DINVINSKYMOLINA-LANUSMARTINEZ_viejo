@@ -244,4 +244,4 @@ const dataP = {
 }
 
 
-module.export = dataP
+module.exports = dataP
