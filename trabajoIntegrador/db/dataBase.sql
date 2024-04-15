@@ -27,6 +27,17 @@ CREATE TABLE productos (
     deletedAt			TIMESTAMP		DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 );
 
+CREATE TABLE comentarios (
+/*  nombreColumna       tipoDato        Restricciones */
+    id                  INT             UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    idUsuario           INT             UNSIGNED,
+    idProducto          INT             UNSIGNED,
+    comentario          VARCHAR(500)    NOT NULL,
+    createdAt           TIMESTAMP       DEFAULT CURRENT_TIMESTAMP,
+    updatedAt           TIMESTAMP       DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    deletedAt           TIMESTAMP       DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+);
+
 /*Tabla usuarios*/
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
@@ -83,3 +94,95 @@ WHERE id = 4;
 UPDATE productos
 SET fotoProducto = 'fotoProducto5.png'
 WHERE id = 5;
+
+/*Tabla comentarios*/
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 1, 1,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 1, 2,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 1, 3,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 2, 1,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 2, 2,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 2, 3,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 1,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 2,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 3,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 4,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 5,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 6,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 4,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);  
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 5,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 6,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 1, 4,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);  
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 2, 5,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);  
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 2, 6,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);  
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 7,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);  
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 8,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 9,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 3, 10,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 7,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 8,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 9,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 4, 10,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 7,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 8,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 9,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT);
+
+INSERT INTO comentarios (id, idUsuario, idProducto, comentario, createdAt, updatedAt, deletedAt)
+VALUES (DEFAULT, 5, 10,   'Lorem ipsum dolor sit amet consectetur adipiscing elit felis, eros odio sapien mi sociosqu habitasse curae non, nibh dui turpis suscipit malesuada sodales hac. Turpis odio massa lacus penatibus ante velit varius posuere, ullamcorper lectus sollicitudin platea morbi pharetra blandit tincidunt vel, et molestie non interdum arcu cursus est. Vivamus feugiat aliquam facilisis nisi primis consequat lectus phasellus fusce ultricies accumsan, proin quam fringilla bibendum posuere habitasse aptent. ', DEFAULT, DEFAULT, DEFAULT); 
