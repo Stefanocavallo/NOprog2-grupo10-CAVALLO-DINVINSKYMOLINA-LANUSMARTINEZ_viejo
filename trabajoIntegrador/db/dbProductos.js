@@ -244,5 +244,4 @@ const dataP = {
 }
 
 
-
-let prodRouter = require('/routes/products');
+module.export = dataP
