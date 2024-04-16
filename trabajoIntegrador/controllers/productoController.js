@@ -3,7 +3,7 @@ const express = require("express")
 
 const productosController = {
     index: function(req,res){
-        return res.render('index', {lista:'aca va la db productos'})
+        return res.render('index', {lista:dbProductos})
     },
     product: function(req, res){
         let id = req.params.idProduct;
@@ -14,16 +14,20 @@ const productosController = {
             }
         }
         if (respuesta.length === 0) {
-            return res.send("El producto seleccionado no existe")
+            return res.send("El producto seleccionado no está disponible")
         }
         else {
             return res.render("product", {info: respuesta})
         }
     },
 
-    add: function(req, res){},
+    add: function(req, res){
+        return res.render('productAdd',{})
+    },
 
-    search: function(req, res){},
+    search: function(req, res){
+        return res.render('searchResults', {})
+    },
 }
 
 

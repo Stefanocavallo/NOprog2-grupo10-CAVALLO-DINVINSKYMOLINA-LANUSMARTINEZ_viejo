@@ -1,9 +1,9 @@
 var datos = require("../db/dataBase.sql")
 const indexController = {
     index: function(req,res) {
-        res.render("index", {title: "Express"}
+        res.render("homepage", {info: db}
         )
-    }
+    },
 };
 
 module.exportexport = indexController
