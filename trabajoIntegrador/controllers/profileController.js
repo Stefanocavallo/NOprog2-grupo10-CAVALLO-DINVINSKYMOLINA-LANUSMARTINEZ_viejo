@@ -8,11 +8,17 @@ const profileController = {
         )
     },
 
-    login : function(req, res){},
+    login : function(req, res){
+        return res.render('login',{})
+    },
 
-    register: function(req, res){},
+    register: function(req, res){
+        return res.render('register',{})
+    },
     
-    edit: function(req, res){},
+    edit: function(req, res){
+        return res.render('profileEdit',{})
+    },
 }; 
 
 module.exports = profileController
