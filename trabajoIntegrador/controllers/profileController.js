@@ -4,7 +4,6 @@ let express = require("express")
 const profileController = {
     profile: function(req,res) {
         res.render("profile", {Usuario: datos.usuarios[0] }
-        
         )
     },
 
