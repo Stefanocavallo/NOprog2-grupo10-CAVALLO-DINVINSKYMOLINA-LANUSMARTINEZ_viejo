@@ -6,4 +6,4 @@ const indexController = {
     },
 };
 
-module.exportexport = indexController
+module.export = indexController

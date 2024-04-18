@@ -6,7 +6,7 @@ const dataP = {
             fotoProducto: 'fotoProducto1.png',
             nombreProducto: 'Renault Megane RS',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual',
-            comentariosProd1: [
+            comentariosProd2: [
                 {
                     fotoUsuario: 'fotoPerfilPepo.png',
                     user: 'Pedro Lanus',

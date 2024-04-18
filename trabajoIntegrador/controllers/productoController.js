@@ -3,7 +3,7 @@ const express = require("express")
 
 const productosController = {
     index: function(req,res){
-        return res.render('index', {lista:db})
+        return res.render('index', {lista:dbProductos})
     },
     product: function(req, res){
         let id = req.params.idProduct;
@@ -13,7 +13,7 @@ const productosController = {
                 respuesta = dbProductos.productos[i]
             }
         }
-        if (respuesta.length === 0) {
+        if (!respuesta) {
             return res.send("El producto seleccionado no está disponible")
         }
         else {
