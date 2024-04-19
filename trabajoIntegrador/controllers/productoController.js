@@ -3,7 +3,7 @@ const express = require("express")
 
 const productosController = {
     index: function(req,res){
-        return res.render("index", {info: dbProductos})
+        return res.render("index", {info: dbProductos.productos})
     },
     product: function(req, res){
         let id = req.params.idProducto;
