@@ -1,4 +1,4 @@
-const dataU = {
+let dataU = {
     usuarios: [
         {
             id: 1,

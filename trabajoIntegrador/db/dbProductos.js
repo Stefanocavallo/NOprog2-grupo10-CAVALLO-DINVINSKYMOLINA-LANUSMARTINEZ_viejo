@@ -1,8 +1,9 @@
-const dataP = {
+let dataP = {
     productos:[
         {
+            estado: 1,
             idProducto: 1,
-            idUsuario: 1,
+            vendedor: 'Tefa123',
             fotoProducto: 'fotoProducto1.png',
             nombreProducto: 'Renault Megane RS',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual',
@@ -19,14 +20,15 @@ const dataP = {
                 },
                 {
                     fotoUsuario: 'fotoPerfilIvan.png',
-                    user: 'Ivan Divinski',
+                    user: 'Ivan Divinsky',
                     texto: 'Que mecha! Cuantos burros? Permutas por Golf TSI?',
                 }
             ]
         },
         {
+            estado: 2,
             idProducto: 2,
-            idUsuario: 1,
+            vendedor: 'Tefa123',
             fotoProducto: 'fotoProducto2.png',
             nombreProducto: 'Renault Sandero RS',
             descripcion: 'Color: Negro, Combustible: Nafta, Motor: 2.0, Puertas: 5, Transmision: Manual',
@@ -49,8 +51,9 @@ const dataP = {
             ]
         },
         {
+            estado: 1,
             idProducto: 3,
-            idUsuario: 2,
+            vendedor: 'Pepo123',
             fotoProducto: 'fotoProducto3.png',
             nombreProducto: 'Peugeot 308 Gti',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6, Puertas: 5, Transmision: Manual',
@@ -73,8 +76,9 @@ const dataP = {
             ] 
         },
         {
+            estado: 2,
             idProducto: 4,
-            idUsuario: 2,
+            vendedor: 'Pepo123',
             fotoProducto: 'fotoProducto4.png',
             nombreProducto: 'Volskwagen Amarok',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 3.0 , Puertas: 4, Transmision: Automatica',
@@ -91,14 +95,15 @@ const dataP = {
                 },
                 {
                     fotoUsuario: 'fotoPerfilIvan.png',
-                    user: 'Ivan Divinski',
+                    user: 'Ivan Divinsky',
                     texto: 'Ufff, muy linda y ademas hermoso andar, nunca te va a dejar a pata, daría lo que sea por una.',
                 }
             ] 
         },
         {
+            estado: 1,
             idProducto: 5,
-            idUsuario: 3,
+            vendedor: 'Messi123',
             fotoProducto: 'fotoProducto5.png',
             nombreProducto: 'Merces-Benz GLC 300',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
@@ -115,14 +120,15 @@ const dataP = {
                 },
                 {
                     fotoUsuario: 'fotoPerfilIvan.png',
-                    user: 'Ivan Divinski',
+                    user: 'Ivan Divinsky',
                     texto: 'Bellisima, un tanque igual, pero siendo tuya la compraria hoy mismo.',
                 }
             ] 
         },
         {
+            estado: 2,
             idProducto: 6,
-            idUsuario: 3,
+            vendedor: 'Messi123',
             fotoProducto: 'fotoProducto6.png',
             nombreProducto: 'Merces-Benz A250',
             descripcion: 'Color: Gris oscuro, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
@@ -145,8 +151,9 @@ const dataP = {
             ] 
         },
         {
+            estado: 1,
             idProducto: 7,
-            idUsuario: 4,
+            vendedor: 'Scaloni123',
             fotoProducto: 'fotoProducto7.png',
             nombreProducto: 'Micro Scaloneta',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 , Puertas: 2, Transmision: Automatica',
@@ -169,8 +176,9 @@ const dataP = {
             ] 
         },
         {
+            estado: 2,
             idProducto: 8,
-            idUsuario: 4,
+            vendedor: 'Scaloni123',
             fotoProducto: 'fotoProducto8.png',
             nombreProducto: 'Fiat 500',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.4 , Puertas: 3, Transmision: Automatica',
@@ -182,7 +190,7 @@ const dataP = {
                 },
                 {
                     fotoUsuario: 'fotoPerfilIvan.png',
-                    user: 'Ivan Divinski',
+                    user: 'Ivan Divinsky',
                     texto: 'Como vas a vender esta cosa... Guardala y nunca más la saques del garage.',
                 },
                 {
@@ -193,8 +201,9 @@ const dataP = {
             ] 
         },
         {
+            estado: 1,
             idProducto: 9,
-            idUsuario: 5,
+            vendedor: 'Ivan123',
             fotoProducto: 'fotoProducto9.png',
             nombreProducto: 'Golf TSI Highline',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6 , Puertas: 5, Transmision: Automatica',
@@ -217,8 +226,9 @@ const dataP = {
             ]  
         },
         {
+            estado: 2,
             idProducto: 10,
-            idUsuario: 5,
+            vendedor: 'Ivan123',
             fotoProducto: 'fotoProducto10.png',
             nombreProducto: 'Audi A4',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 turbo , Puertas: 5, Transmision: Automatica',

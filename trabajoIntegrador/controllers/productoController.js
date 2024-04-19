@@ -3,10 +3,10 @@ const express = require("express")
 
 const productosController = {
     index: function(req,res){
-        return res.render('index', {lista:dbProductos})
+        return res.render("index", {info: dbProductos})
     },
     product: function(req, res){
-        let id = req.params.idProduct;
+        let id = req.params.idProducto;
         let respuesta;
         for (let i = 0; i < dbProductos.productos.length; i++) {
             if (id.toLowerCase() === dbProductos.productos[i].nombreProducto.toLowerCase()) {
