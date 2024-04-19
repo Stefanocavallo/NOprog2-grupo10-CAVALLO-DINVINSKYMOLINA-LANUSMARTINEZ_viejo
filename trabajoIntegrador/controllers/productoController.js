@@ -6,7 +6,7 @@ const productosController = {
         return res.render("index", {info: dbProductos.productos})
     },
     product: function(req, res){
-        let id = req.params.idProducto;
+        let id = req.params.idProduct;
         let respuesta;
         for (let i = 0; i < dbProductos.productos.length; i++) {
             if (id.toLowerCase() === dbProductos.productos[i].nombreProducto.toLowerCase()) {
