@@ -6,7 +6,7 @@ let dataP = {
             estado: 1,
             idProducto: 1,
             vendedor: 'Tefa123',
-            fotoProducto: 'fotoProducto1.png',
+            fotoProducto: '/images/products/RMrs.png',
             nombreProducto: 'Renault Megane RS',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
