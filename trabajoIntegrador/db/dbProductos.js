@@ -6,7 +6,7 @@ let dataP = {
             estado: 1,
             idProducto: 1,
             vendedor: 'Tefa123',
-            fotoProducto: '/images/products/RMrs.png',
+            fotoProducto: 'fotoProducto1.png',
             nombreProducto: 'Renault Megane RS',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
@@ -31,7 +31,7 @@ let dataP = {
             estado: 2,
             idProducto: 2,
             vendedor: 'Tefa123',
-            fotoProducto: 'fotoProducto2.png',
+            fotoProducto: '../public/images/products/SanderoRS.jpeg',
             nombreProducto: 'Renault Sandero RS',
             descripcion: 'Color: Negro, Combustible: Nafta, Motor: 2.0, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
@@ -56,7 +56,7 @@ let dataP = {
             estado: 1,
             idProducto: 3,
             vendedor: 'Pepo123',
-            fotoProducto: 'fotoProducto3.png',
+            fotoProducto: '../public/images/products/308GTI.jpeg',
             nombreProducto: 'Peugeot 308 Gti',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
@@ -81,7 +81,7 @@ let dataP = {
             estado: 2,
             idProducto: 4,
             vendedor: 'Pepo123',
-            fotoProducto: 'fotoProducto4.png',
+            fotoProducto: '../public/images/products/VwAmarok.jpeg',
             nombreProducto: 'Volskwagen Amarok',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 3.0 , Puertas: 4, Transmision: Automatica',
             comentariosProd2: [
@@ -106,7 +106,7 @@ let dataP = {
             estado: 1,
             idProducto: 5,
             vendedor: 'Messi123',
-            fotoProducto: 'fotoProducto5.png',
+            fotoProducto: '../public/images/products/MGLC300.jpeg',
             nombreProducto: 'Merces-Benz GLC 300',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
@@ -131,7 +131,7 @@ let dataP = {
             estado: 2,
             idProducto: 6,
             vendedor: 'Messi123',
-            fotoProducto: 'fotoProducto6.png',
+            fotoProducto: '../public/images/products/MBA250.jpeg',
             nombreProducto: 'Merces-Benz A250',
             descripcion: 'Color: Gris oscuro, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
@@ -156,7 +156,7 @@ let dataP = {
             estado: 1,
             idProducto: 7,
             vendedor: 'Scaloni123',
-            fotoProducto: 'fotoProducto7.png',
+            fotoProducto: '../public/images/products/MicroScaloneta.webp',
             nombreProducto: 'Micro Scaloneta',
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 , Puertas: 2, Transmision: Automatica',
             comentariosProd2: [
@@ -181,7 +181,7 @@ let dataP = {
             estado: 2,
             idProducto: 8,
             vendedor: 'Scaloni123',
-            fotoProducto: 'fotoProducto8.png',
+            fotoProducto: '../public/images/products/Fiat500.webp',
             nombreProducto: 'Fiat 500',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.4 , Puertas: 3, Transmision: Automatica',
             comentariosProd2: [
@@ -206,7 +206,7 @@ let dataP = {
             estado: 1,
             idProducto: 9,
             vendedor: 'Ivan123',
-            fotoProducto: 'fotoProducto9.png',
+            fotoProducto: '../public/images/products/GolfTSI.jpeg',
             nombreProducto: 'Golf TSI Highline',
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
@@ -231,7 +231,7 @@ let dataP = {
             estado: 2,
             idProducto: 10,
             vendedor: 'Ivan123',
-            fotoProducto: 'fotoProducto10.png',
+            fotoProducto: '../public/images/products/AudiA4.jpeg',
             nombreProducto: 'Audi A4',
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 turbo , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
