@@ -1,9 +1,17 @@
 var datos = require("../db/dbUsuarios")
+let prods = require("../db/dbProductos")
 let express = require("express")
 
 const profileController = {
     profile: function(req,res) {
-        res.render("profile", {Usuario: datos.usuarios[0] }
+        let usuario = req.params.usuario
+        let infoUsuario;
+        for (let i = 0; i < datos.usuarios.length; i++) {
+            if (usuario.toLowerCase()===datos.usuarios[i].usuario.toLowerCase()){
+                infoUsuario=datos.usuarios[i]
+            }
+        }
+        res.render("profile", {info: infoUsuario, productos:prods.productos}
         )
     },
 

@@ -4,7 +4,7 @@
 <%- include('../views/partials/head.ejs') %>
 <body>
   <!-- Header -->
-  <%- include('../views/partials/header.ejs') %>
+  <%- include('../views/partials/headerLogueado') %>
   <!-- /Header -->
   
 	<!-- Datos del usuario -->
@@ -15,20 +15,40 @@
 			</div>
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
-					<h1 class="main-title">Nombre del usuario 
-						<a href="profile-edit.html">
+					<h1 class="main-title"><%- info.usuario %> 
+						<a href="http://localhost:3000/cartastic/profile/profileEdit">
 							<i class="fas fa-cog"></i>
 						</a>
 					</h1>
 					<a class="btn mt-3 ml-4" href="">SEGUIR</a>
-				</div>
-				<div>
-					<ul class="">
-						<li>8 productos</li>
-						<li>200 seguidores</li>
-						<li>300 comentarios</li>
-					</ul>
-				</div>
+					<div>
+						<p>
+							<%- info.email %>
+						</p>
+					</div>
+					<div>
+						<ul class="">
+							<li>
+						<% let num = 0
+							for (let i = 0; i < productos.length; i++) {
+								if(productos[i].vendedor.toLowerCase()=== info.usuario.toLowerCase()){
+									num = num + 1
+								}
+							}%>
+	
+								<%- num %> productos</li>
+							<li><%- info.seguidores %> seguidores</li>
+							<li>
+							<% let num1 = 0
+								for (let i = 0; i < productos.length; i++) {
+									for(let z=0; z < productos[i].comentariosProd2.length; z++)
+										if(productos[i].comentariosProd2[z].user.toLowerCase()=== info.usuario.toLowerCase()){
+											num1 = num + 1
+									}
+								}%>
+								<%- num1  %> comentarios</li>
+						</ul>
+					</div>
 			</div>
 		</div>
 	</section>
@@ -41,132 +61,28 @@
 				<h2 class="products-title">Mis productos</h2>
 			</div>
 			<!-- Show mis productos -->
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
-						</article>
-					</a>
-				</section>
-			</div>
+			<% for (let i = 0; i < productos.length; i++) {
+				if (productos[i].vendedor.toLowerCase() === info.usuario.toLowerCase()) {%>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<section class="product-box">
+						<a href="http://localhost:3000/cartastic/product/<%- productos[i].nombreProducto %>">
+							<figure class="product-box_image">
+								<img src="<%-productos[i].fotoProducto%>" alt='<%-productos[i].nombreProducto%>'>
+							</figure>
+							<article class="product-box_data">
+								<h2><%- productos[i].nombreProducto %></h2>
+								<p><%- productos[i].descripcion %></p>
+								<p>Comentarios: <%- productos[i].comentariosProd2.length %></p>
+							</article>
+						</a>
+					</section>
+				</div>
+				<%} }%>
 		</div>
 	</div>
-	<!-- /Mis productos -->
 
 
-	<!-- footer -->
 	<%- include('./partials/footer')%>
-	<!-- /footer -->
+
 </body>	
 </html>
