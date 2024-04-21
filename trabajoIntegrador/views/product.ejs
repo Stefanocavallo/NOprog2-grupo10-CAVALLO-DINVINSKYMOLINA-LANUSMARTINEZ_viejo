@@ -11,9 +11,6 @@
     <div class="container products-wrapper">
       <div class="d-flex align-items-center">
         <h2 class="products-title"><%= info.nombreProducto %></h2>
-        <p class="product-detail-description">
-          <a href="product-add.html">Editar</a>
-        </p>
       </div>
       <div class="product-detail">
         <div class="row">
@@ -23,38 +20,31 @@
           </article>
           <div class="col-12 col-lg-4">
             <section class="comments">
-              <% if (info.comentariosProd2 && info.comentariosProd2.length > 0) { %>
-                  <% info.comentariosProd2.forEach(function(comentario) { %>
-                      <article>
-                          <img src="https://via.placeholder.com/35" alt="" />
-                          <div class="data">
-                              <p class="user">
-                                  <strong><a href="profile.html"><%= comentario.user %>:</a></strong>
-                                  <%= comentario.texto %>
-                              </p>
-                          </div>
-                      </article>
-                  <% }); %>
-              <% } else { %>
-                  <p>No hay comentarios para este producto.</p>
+              <% for(let i=0; i < info.comentariosProd2.length; i++){ %>
+                <article>
+                  <img src="https://via.placeholder.com/35" alt="">
+                  <div class="data">
+                    <p class="user">
+                    <strong> <a href="http://localhost:3000/cartastic/profile/<%- info.comentariosProd2[i].user%>"><%- info.comentariosProd2[i].user%></a> </strong>
+                    <%- info.comentariosProd2[i].texto%>
+                  </p>
+                  </div>
+                </article>
               <% } %>
-          </section>
-            <form class="form" action="" method="POST">
-              <input
-                class="form-input"
-                type="text"
-                value=""
-                placeholder="Agregar comentario"
-              />
-              <button type="submit" class="buy-now-button">
-                AGREGAR COMENTARIO
-              </button>
+  
+            </section>
+            <form class="form" action="http://localhost:3000/cartastic" method="get">
+              <input class="form-input" type="text" value="" placeholder="Agregar comentario">
+              <button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
             </form>
             <hr />
           </div>
         </div>
       </div>
     </div>
-    <%- include('../views/partials/footer.ejs') %>
+   <!-- footer -->
+	<%- include('./partials/footer') %>	
+	<!-- /footer -->
+
   </body>
 </html>
