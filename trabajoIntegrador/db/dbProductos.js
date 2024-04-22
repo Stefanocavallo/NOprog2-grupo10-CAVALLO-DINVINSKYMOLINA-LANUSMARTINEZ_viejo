@@ -3,7 +3,7 @@ let express = require('express');
 let dataP = {
     productos:[
         {
-            estado: 1,
+            clase: 1,
             idProducto: 1,
             vendedor: 'Tefa123',
             fotoProducto: '/images/products/RMrs.png',
@@ -28,7 +28,7 @@ let dataP = {
             ]
         },
         {
-            estado: 2,
+            clase: 2,
             idProducto: 2,
             vendedor: 'Tefa123',
             fotoProducto: '/images/products/SanderoRS.jpeg',
@@ -53,7 +53,7 @@ let dataP = {
             ]
         },
         {
-            estado: 1,
+            clase: 1,
             idProducto: 3,
             vendedor: 'Pepo123',
             fotoProducto: '/images/products/308GTI.jpeg',
@@ -78,7 +78,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 2,
+            clase: 2,
             idProducto: 4,
             vendedor: 'Pepo123',
             fotoProducto: '/images/products/VwAmarok.jpeg',
@@ -103,7 +103,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 1,
+            clase: 1,
             idProducto: 5,
             vendedor: 'Messi123',
             fotoProducto: '/images/products/MGLC300.jpeg',
@@ -128,7 +128,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 2,
+            clase: 2,
             idProducto: 6,
             vendedor: 'Messi123',
             fotoProducto: '/images/products/MBA250.jpeg',
@@ -153,7 +153,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 1,
+            clase: 1,
             idProducto: 7,
             vendedor: 'Scaloni123',
             fotoProducto: '/images/products/MicroScaloneta.webp',
@@ -178,7 +178,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 2,
+            clase: 2,
             idProducto: 8,
             vendedor: 'Scaloni123',
             fotoProducto: '/images/products/Fiat500.webp',
@@ -203,7 +203,7 @@ let dataP = {
             ] 
         },
         {
-            estado: 1,
+            clase: 1,
             idProducto: 9,
             vendedor: 'Ivan123',
             fotoProducto: '/images/products/GolfTSI.jpeg',
@@ -228,7 +228,7 @@ let dataP = {
             ]  
         },
         {
-            estado: 2,
+            clase: 2,
             idProducto: 10,
             vendedor: 'Ivan123',
             fotoProducto: '/images/products/AudiA4.jpeg',

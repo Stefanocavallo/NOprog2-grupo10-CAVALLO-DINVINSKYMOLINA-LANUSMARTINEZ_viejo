@@ -9,7 +9,7 @@
 	
 	<!-- Banner -->
 	<div class="banner">
-		<img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+		<img src="images/bannerCars.png" alt="Banner de ofertas">
 	</div>
 	<!-- /Banner -->
 
@@ -21,7 +21,7 @@
 			</div>
 			<!-- Show the "ultimos" products -->
 			<% for(let i=0; i < info.length; i++){ %>
-				<% if(info[i].estado === 1){ %>
+				<% if(info[i].clase === 1){ %>
 					<div class="col-12 col-sm-6 col-lg-3">
 						<section class="product-box">
 							<a href="http://localhost:3000/cartastic/product/<%- info[i].nombreProducto%>">
@@ -50,7 +50,7 @@
 			</div>
 			<!-- Show the "ultimos" products -->
 			<% for(let i=0; i < info.length; i++){ %>
-				<%if(info[i].estado === 2 ){ %>
+				<%if(info[i].clase === 2 ){ %>
 					<div class="col-12 col-sm-6 col-lg-3">
 						<section class="product-box">
 							<a href="http://localhost:3000/Cartastic/product/<%- info[i].nombreProducto%>">
