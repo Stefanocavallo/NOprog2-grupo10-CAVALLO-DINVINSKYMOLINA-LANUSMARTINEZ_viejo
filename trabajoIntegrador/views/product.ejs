@@ -22,7 +22,7 @@
             <section class="comments">
               <% for(let i=0; i < info.comentariosProd2.length; i++){ %>
                 <article>
-                  <img src="https://via.placeholder.com/35" alt="">
+                  <img src= <%- info.comentariosProd2[i].fotoUsuario %> alt="">
                   <div class="data">
                     <p class="user">
                     <strong> <a href="http://localhost:3000/cartastic/profile/usuario/<%- info.comentariosProd2[i].user%>">

@@ -11,17 +11,17 @@ let dataP = {
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Cuantos CV? Aceptas permuta? Te ofrezco un Peugeot 308 Gti + diferencia.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Hay posibilidades de mandarlo a Miami? Anto anda necesitando un nuevo auto, avisame y arreglamos pa.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilIvan.png',
+                    fotoUsuario: '/images/users/ivan.jpg',
                     user: 'Ivan123',
                     texto: 'Que mecha! Cuantos burros? Permutas por Golf TSI?',
                 }
@@ -36,17 +36,17 @@ let dataP = {
             descripcion: 'Color: Negro, Combustible: Nafta, Motor: 2.0, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilScaloni.png',
+                    fotoUsuario: '/images/users/scaloni.jpg',
                     user: 'Scaloni123',
                     texto: 'Nunca más me compro uno de estos, no se lo recomiendo a nadie...',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Linda nave para ir por Paris, potente, ruidosa y furiosa.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'La verdad que nunca me subiria a uno de estos, no me gustan nada...',
                 }
@@ -61,17 +61,17 @@ let dataP = {
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6, Puertas: 5, Transmision: Manual',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Divino, lastima el motor THPum... Pero de todas formas, humilla a la competencia',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Linda nave para ir por Paris, potente, ruidosa y furiosa.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilIvan.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'La verdad que nunca me subiria a uno de estos, no me gustan nada...',
                 }
@@ -86,17 +86,17 @@ let dataP = {
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 3.0 , Puertas: 4, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Hermoso el andar, pero visualmente nefasta...',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Muy linda nave, tenía una en Rosario, volveria a tener una.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilIvan.png',
+                    fotoUsuario: '/images/users/ivan.jpg',
                     user: 'Ivan123',
                     texto: 'Ufff, muy linda y ademas hermoso andar, nunca te va a dejar a pata, daría lo que sea por una.',
                 }
@@ -111,17 +111,17 @@ let dataP = {
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Na pero como vas a publicar esto?? Estas loco, hay chicos en esta pagina, jajajaja! Hermosa!',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilScaloni.png',
+                    fotoUsuario: '/images/users/scaloni.jpg',
                     user: 'Scaloni123',
                     texto: 'Para Lio, como vas a vender esa hermosura?? Regalasela a alguno del plantel jajaja.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilIvan.png',
+                    fotoUsuario: '/images/users/ivan.jpg',
                     user: 'Ivan123',
                     texto: 'Bellisima, un tanque igual, pero siendo tuya la compraria hoy mismo.',
                 }
@@ -136,17 +136,17 @@ let dataP = {
             descripcion: 'Color: Gris oscuro, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Muy lindo auto, no me decido igual entre este o un serie 1...',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilScaloni.png',
+                    fotoUsuario: '/images/users/scaloni.jpg',
                     user: 'Scaloni123',
                     texto: 'En el mercho, escuchando Fercho, jajajaja. Vendeselo a De Paul a ver si recupera a Tini!',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Andaba buscando uno de estos hace tiempo, y viendo que es tuyo Lio, no dudo en comprarlo!',
                 }
@@ -161,17 +161,17 @@ let dataP = {
             descripcion: 'Color: Blanco, Combustible: Nafta, Motor: 2.0 , Puertas: 2, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Jajajajaj, ya mismo la compro!.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Estas loco!',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Jujuuuuuu una locura!!!',
                 }
@@ -186,17 +186,17 @@ let dataP = {
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.4 , Puertas: 3, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Una c4g4d4 con ruedas....',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilIvan.png',
+                    fotoUsuario: '/images/users/ivan.jpg',
                     user: 'Ivan123',
                     texto: 'Como vas a vender esta cosa... Guardala y nunca más la saques del garage.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Horrible es poco...',
                 }
@@ -211,17 +211,17 @@ let dataP = {
             descripcion: 'Color: Azul, Combustible: Nafta, Motor: 1.6 , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilTefa.png',
+                    fotoUsuario: '/images/users/tefa.jpg',
                     user: 'Tefa123',
                     texto: 'Como vas a vender LA mecha??',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Buen primer auto, se lo pienso comprar a Ciro.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Ni loco te compro este auto sabiendo como lo trataste... jajajaja',
                 }

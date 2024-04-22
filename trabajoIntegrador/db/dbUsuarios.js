@@ -7,7 +7,7 @@ let dataU = {
             email: 'cavallos@udesa.edu.ar',
             fechaNacimiento: '2003-07-21',
             numeroDocumento: 44895188,
-            foto: 'fotoPerfilTefa.png',
+            foto: '/images/users/tefa.jpg',
             seguidores: 12
         },
         {
@@ -16,7 +16,7 @@ let dataU = {
             email: 'planusmartinez@udesa.edu.ar',
             fechaNacimiento: '2004-12-08',
             numeroDocumento: 46293905,
-            foto: 'fotoPerfilPepo.png',
+            foto: '/images/users/pepo.jpg',
             seguidores: 13,
         },
         {
@@ -25,7 +25,7 @@ let dataU = {
             email: 'lionelmessi@gmail.com',
             fechaNacimiento: '1987-06-24',
             numeroDocumento: 18122022,
-            foto: 'fotoPerfilMessi.png',
+            foto: '/images/users/messi1.jpg',
             seguidores: 10,
         },
         {
@@ -34,7 +34,7 @@ let dataU = {
             email: 'scaloni@gmail.com',
             fechaNacimiento: '1978-05-16',
             numeroDocumento: 20122022,
-            foto: 'fotoPerfilScaloni.png',
+            foto: '/images/users/scaloni.jpg',
             seguidores: 22
         },
         {
@@ -43,7 +43,7 @@ let dataU = {
             email: 'idivinskymolina@udesa.edu.ar',
             fechaNacimiento: '2004-12-21',
             numeroDocumento: 46437670,
-            foto: 'fotoPerfilIvan.png',
+            foto: '/images/users/ivan.jpg',
             seguidores: 11,
         },
     ],
