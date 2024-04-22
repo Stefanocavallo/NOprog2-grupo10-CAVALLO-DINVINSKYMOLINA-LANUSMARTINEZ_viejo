@@ -26,8 +26,15 @@ const productosController = {
     },
 
     search: function(req, res){
-        return res.render('searchResults', {})
-    },
+        { 
+            let buscado= req.query.search
+            let rta=[]
+            for (let i = 0; i < dbProductos.productos.length; i++) {
+                if (dbProductos.productos[i].nombreProducto.toLowerCase().includes(buscado.toLowerCase()) ) {
+                    rta.push(dbProductos.productos[i])}}
+            return res.render('searchResults',{info:rta})
+                }
+        }
 }
 
 
