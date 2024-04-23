@@ -23,7 +23,7 @@
 							<section class="product-box">
 								<a href="http://localhost:3000/cartastic/product/<%- info[i].nombreProducto%>">
 									<figure class="product-box_image">
-										<img src= <%- info[i].fotoProducto %> alt="<%- info[i].nombreProducto%>">
+										<img src= '<%- info[i].fotoProducto %>' alt="<%- info[i].nombreProducto%>">
 									</figure>
 									<article class="product-box_data">
 										<h2><%-info[i].nombreProducto %></h2>
@@ -35,7 +35,8 @@
 							</section>
 						</div>
 				<%  }}%>
-
+		</div>
+	</div>
 
 	<%- include('./partials/footer')%>
 </body>
