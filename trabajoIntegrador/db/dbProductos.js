@@ -236,17 +236,17 @@ let dataP = {
             descripcion: 'Color: Gris, Combustible: Nafta, Motor: 2.0 turbo , Puertas: 5, Transmision: Automatica',
             comentariosProd2: [
                 {
-                    fotoUsuario: 'fotoPerfilScaloni.png',
+                    fotoUsuario: '/images/users/scaloni.jpg',
                     user: 'Scaloni123',
                     texto: 'mmmm dudosa venta, tanto tiempo tiene este auto que es un fosil...',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilMessi.png',
+                    fotoUsuario: '/images/users/messi1.jpg',
                     user: 'Messi123',
                     texto: 'Hermosa bestia, aunque los respuestos... Mamita.',
                 },
                 {
-                    fotoUsuario: 'fotoPerfilPepo.png',
+                    fotoUsuario: '/images/users/pepo.jpg',
                     user: 'Pepo123',
                     texto: 'Esa perdida de aceite... No lo vendes mas!',
                 }
