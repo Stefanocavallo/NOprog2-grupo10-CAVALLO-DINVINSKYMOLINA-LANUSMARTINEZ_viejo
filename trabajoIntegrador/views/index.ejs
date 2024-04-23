@@ -1,80 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Include Head -->
-<%- include('./partials/head')%>
-<body>
-	<!-- Header -->
-	<%- include('./partials/header') %>
-	<!-- /Header -->
-	
-	<!-- Banner -->
-	<div class="banner">
-		<img src="images/bannerCars.png" alt="Banner de ofertas">
-	</div>
-	<!-- /Banner -->
+    <!-- Include Head -->
+    <%- include('../views/partials/head.ejs') %>
+    <body>
+        <!-- Header -->
+        <%- include('../views/partials/header.ejs') %>
+        <!-- /Header -->
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Nuevas publicaciones</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			<% for(let i=0; i < info.length; i++){ %>
-				<% if(info[i].clase === 1){ %>
-					<div class="col-12 col-sm-6 col-lg-3">
-						<section class="product-box">
-							<a href="http://localhost:3000/cartastic/product/<%- info[i].nombreProducto%>">
-								<figure class="product-box_image">
-									<img src=<%- info[i].fotoProducto%> alt="">
-								</figure>
-								<article class="product-box_data">
-									<h2><%-info[i].nombreProducto %></h2>
-									<p><%-info[i].descripcion%></p>
-									<% if (info[i].comentariosProd2.lenght > 0) { %>
-										<p>Comentarios: <%- info[i].comentariosProd2.length %></p>
-										<% }} %>
-									</article>
-							</a>
-						</section>
-					</div>
-			<% } %>
-		</div>
-	</div>
-	<!-- /Novedades -->
-	<!-- Más comentados -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Más buscados</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			<% for(let i=0; i < info.length; i++){ %>
-				<%if(info[i].clase === 2 ){ %>
-					<div class="col-12 col-sm-6 col-lg-3">
-						<section class="product-box">
-							<a href="http://localhost:3000/Cartastic/product/<%- info[i].nombreProducto%>">
-								<figure class="product-box_image">
-									<img src=<%- info[i].fotoProducto %> alt="">
-								</figure>
-								<article class="product-box_data">
-									<h2><%-info[i].nombreProducto %></h2>
-									<p><%-info[i].descripcion%></p>
-									<% if (info[i].comentariosProd2.lenght > 0) { %>
-										<p>Comentarios: <%- info[i].comentariosProd2.length %></p>
-									<% }} %>	
-								</article>
-							</a>
-						</section>
-					</div>
-			<% } %>
-		</div>
-	</div>
-	<!-- /Más comentados -->
+        <!-- Productos -->
+        <div class="container product-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="products-title">Nuevas publicaciones</h2>
+                </div>
+                <!--Show nuevos productos-->
+                <% for (let i = 0; i < info.length; i++) { %>
+                    <% if(info[i].clase ===1){ %>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <section class="product-box">
+                                <a href="http://localhost:3000/cartastic/product/<%- info[i].nombreProducto%>">
+                                    <figure class="product-box_image">
+                                        <img src=<%- info[i].fotoProducto%> alt=''>
+                                    </figure>
+                                    <article class="product-box_data">
+                                        <h2><%-info[i].nombreProducto%></h2>
+                                        <p><%-info[i].descripcion%></p>
+                                        <% if (info[i].comentariosProd2.length > 0) {%>
+                                            <p>Comentarios: <%-info[i].comentariosProd2.length%></p>
+                                        <%}%>
+                                    </article>
+                                </a>
+                            </section>
+                        </div>
+                    <%}%>
+                <%}%>
+            </div>
+        </div>
+        <!--/Productos-->
+        <!--Más buscados-->
+        <div class="container product-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="products-title"> Más buscados</h2>
+                </div>
+                <!--Show más buscados-->
+                <% for (let i = 0; i < info.length; i++) {%>
+                    <%if(info[i].clase ===2){%>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <section class="product-box">
+                                <a href="http://localhost:3000/cartastic/product/<%- info[i].nombreProducto%>">
+                                    <figure class="product-box_image">
+                                        <img src=<%- info[i].fotoProducto%> alt="">
+                                    </figure>
+                                    <article class="product-box_data">
+                                        <h2><%- info[i].nombreProducto%></h2>
+                                        <p><%- info[i].descripcion%></p>
+                                        <% if (info[i].comentariosProd2.length > 0){%>
+                                            <p>Comentarios: <%- info[i].comentariosProd2.length%></p>
+                                        <%}%>
+                                    </article>
+                                </a>
+                            </section>
+                        </div>
+                    <%}%>
+                
+                <%}%>
+            </div>
+        </div>
+        <!--/Más buscados-->
 
-
-	<!-- footer -->
-	<%- include('./partials/footer') %>
-	<!-- /footer -->
-</body>	
+        <!--footer-->
+        <%- include('./partials/footer')%>
+        <!--/footer-->
+    </body>
 </html>
