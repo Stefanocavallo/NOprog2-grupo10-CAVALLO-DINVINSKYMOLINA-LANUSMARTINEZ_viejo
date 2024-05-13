@@ -46,59 +46,51 @@ CREATE TABLE comentarios (
 /*Tabla usuarios*/
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'cavallos@udesa.edu.ar', 'tefacha560', '2003-07-21', 44895188, 'fotoPerfilTefa.jpg', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'cavallos@udesa.edu.ar', 'tefa123', '2003-07-21', 44895188, 'tefa.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'planusmartinez@udesa.edu.ar', 'pepo123', '2004-12-08', 46293905, 'fotoPerfilPepo.jpg', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'planusmartinez@udesa.edu.ar', 'pepo123', '2004-12-08', 46293905, 'pepo.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'lionelmessi@gmail.com', 'messi123', '1987-06-24', 18122022, 'fotoPerfilMessi.jpg', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'lionelmessi@gmail.com', 'messi123', '1987-06-24', 18122022, 'messi1.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'scaloni@gmail.com', 'scaloni123', '1978-05-16', 20122022, 'fotoPerfilScaloni.jpg', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'scaloni@gmail.com', 'scaloni123', '1978-05-16', 20122022, 'Scaloni.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'idivinskimolina@udesa.edu.ar', 'ivan123', '2004-12-21', 46437670, 'fotoPerfilIvan.jpg', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'idivinskimolina@udesa.edu.ar', 'ivan123', '2004-12-21', 46437670, 'ivan.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 /*Tabla productos*/
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt) 
-VALUES 			(DEFAULT, 1, 'fotoProducto1.png', 'iphone15', 'Ultimo modelo celular de Apple, el iPhone 15 viene con la Dynamic Island, cámara gran angular de 48 MP, entrada USB-C y un resistente vidrio con infusión de color en un diseño de aluminio o titanio.', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 1, 'RMrs.png', 'Renault Megane RS', 'Color: Blanco, Combustible: Nafta, Motor: 2.0 turbo, Puertas: 5, Transmision: Manual', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt) 
-VALUES 			(DEFAULT, 1, 'fotoProducto2.png', 'iphone14', 'El iPhone 14 viene con el sistema de dos cámaras más impresionante en un Iphone 14, para que tomes fotos espectaculares con mucha o poca luz. Y te da más tranquilidad gracias a una funcionalidad de seguridad que salva vidas.', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 1, 'SanderoRS.jpeg', 'Renault Sandero RS', 'Color: Negro, Combustible: Nafta, Motor: 2.0, Puertas: 5, Transmision: Manual', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt) 
-VALUES 			(DEFAULT, 2, 'fotoProducto3.png', 'Volskwagen Golf', 'Color: Azul, Combustible: Nafta, Motor: 1.4, Puertas: 5, Sensor: Si, Transmision: automática', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 2, '308GTI.jpeg', 'Peugeot 308 GTI', 'Color: Azul, Combustible: Nafta, Motor: 1.4, Puertas: 5, Sensor: Si, Transmision: automática', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt)
-VALUES 			(DEFAULT, 2, 'fotoProducto4.png', 'Volskwagen Polo', 'Color: Azul, Combustible: Nafta, Motor: 1.4, Puertas: 5, Sensor: Si, Transmision: automática', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 2, 'VwAmarok.jpeg', 'Volskwagen Amarok', 'Color: Gris, Combustible: Nafta, Motor: 3.0 , Puertas: 4, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt) 
-VALUES 			(DEFAULT, 3, 'fotoProducto3.png', 'Pelota YPF Messi', 'Pelota YPF Messi 3 estrellas. Este verano disfruta jugando al futbol con tus amigos con esta nueva pelota de Messi.', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 3, 'MGLC300.jpeg', 'Merces-Benz GLC 300', 'Color: Gris, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt) 
-VALUES 			(DEFAULT, 3, 'fotoProducto6.png', 'Pelota Adidas Al Rihla', 'Exterior 70 % poliuretano, 20 % poliéster reciclado, 10 % viscosa. Exterior sin costuras con uniones termoselladas. Logo estampado de la Copa Mundial. Certificación Fifa. Color: White', DEFAULT, DEFAULT, DEFAULT);
+VALUES 			(DEFAULT, 3, 'MBA250.jpeg', 'Mercedes-Benz A250', 'Color: Gris oscuro, Combustible: Nafta, Motor: 2.0 , Puertas: 5, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt)
-VALUES			(DEFAULT, 4, 'fotoProducto7.png', 'Chomba Fútbol adidas Argentina', 'Seguí a Argentina hasta la cima del fútbol mundial. Esta Chomba Fútbol adidas Argentina Tiro 24 Competition Hombre te brinda comodidad con su tejido suave, puños y cuello acanalado. ', DEFAULT, DEFAULT, DEFAULT);
+VALUES			(DEFAULT, 4, 'MicroScaloneta.webp', 'Micro Scaloneta', 'Color: Blanco, Combustible: Nafta, Motor: 2.0 , Puertas: 2, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt)
-VALUES 			(DEFAULT, 4, 'fotoProducto8.png', 'Campera Lakers', 'Campera de los Angeles Lakers de dudosa procedencia comprada fuera del estadio ', DEFAULT, DEFAULT, DEFAULT);  
+VALUES 			(DEFAULT, 4, 'Fiat500.webp', 'Fiat 500', 'Color: Azul, Combustible: Nafta, Motor: 1.4 , Puertas: 3, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);  
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt)
-VALUES 			(DEFAULT, 5, 'fotoProducto9.png',  ' Vans Knu Skool ', 'Zapatillas vans knu skool black.w talle 45 AR 32.5 cm largo de pie de la plantilla. ', DEFAULT, DEFAULT, DEFAULT);    
+VALUES 			(DEFAULT, 5, 'GolfTSI.jpeg',  'Golf TSI Highline', 'Color: Azul, Combustible: Nafta, Motor: 1.6 , Puertas: 5, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);    
 
 INSERT INTO productos (id, idUsuario, fotoProducto, nombreProduct, Descripcion, createdAt, updatedAt, deletedAt)
-VALUES 			(DEFAULT, 5, 'fotoProducto10.png', 'Audi A1', 'El nuevo Audi A1 Sportback redefine el segmento compacto. Su llamativo diseño deportivo caracteriza a la segunda generación del exitoso auto compacto.', DEFAULT, DEFAULT, DEFAULT);
-
-UPDATE productos
-SET fotoProducto = 'fotoProducto4.png'
-WHERE id = 4;
-
-UPDATE productos
-SET fotoProducto = 'fotoProducto5.png'
-WHERE id = 5;
+VALUES 			(DEFAULT, 5, 'AudiA4.jpeg', 'Audi A4', 'Color: Gris, Combustible: Nafta, Motor: 2.0 turbo , Puertas: 5, Transmision: Automatica', DEFAULT, DEFAULT, DEFAULT);
 
 /*Tabla comentarios*/
 
