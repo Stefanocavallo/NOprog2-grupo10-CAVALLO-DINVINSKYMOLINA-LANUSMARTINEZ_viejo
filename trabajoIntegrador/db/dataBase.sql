@@ -46,19 +46,19 @@ CREATE TABLE comentarios (
 /*Tabla usuarios*/
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'cavallos@udesa.edu.ar', 'tefacha560', '2003-07-21', 44895188, 'fotoPerfilTefa.png', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'cavallos@udesa.edu.ar', 'tefacha560', '2003-07-21', 44895188, 'fotoPerfilTefa.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'planusmartinez@udesa.edu.ar', 'pepo123', '2004-12-08', 46293905, 'fotoPerfilPepo.png', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'planusmartinez@udesa.edu.ar', 'pepo123', '2004-12-08', 46293905, 'fotoPerfilPepo.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'lionelmessi@gmail.com', 'messi123', '1987-06-24', 18122022, 'fotoPerfilMessi.png', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'lionelmessi@gmail.com', 'messi123', '1987-06-24', 18122022, 'fotoPerfilMessi.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'scaloni@gmail.com', 'scaloni123', '1978-05-16', 20122022, 'fotoPerfilScaloni.png', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'scaloni@gmail.com', 'scaloni123', '1978-05-16', 20122022, 'fotoPerfilScaloni.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO usuarios (id, mail, contrasenia, fechaNacimiento, numeroDocumento, foto, createdAt, updatedAt, deletedAt)
-VALUES (DEFAULT, 'idivinskimolina@udesa.edu.ar', 'ivan123', '2004-12-21', 46437670, 'fotoPerfilIvan.png', DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, 'idivinskimolina@udesa.edu.ar', 'ivan123', '2004-12-21', 46437670, 'fotoPerfilIvan.jpg', DEFAULT, DEFAULT, DEFAULT);
 
 /*Tabla productos*/
 
